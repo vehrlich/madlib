@@ -1,0 +1,14 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: exercise/Dockerfile
+    restart: always
+    command: python manage.py runserver 0.0.0.0:8000
+    container_name: madlib_app
+    volumes:
+      - ./exercise:/app/
+    ports:
+      - 8000:8000
+

@@ -1,0 +1,3 @@
+Django~=3.1.5
+requests~=2.25.1
+httmock==1.4.0
